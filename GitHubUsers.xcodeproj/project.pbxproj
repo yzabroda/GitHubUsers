@@ -15,13 +15,14 @@
 		7600A92F192B7C6F007B444A /* YZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600A92E192B7C6F007B444A /* YZAppDelegate.m */; };
 		7600A932192B7C6F007B444A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7600A930192B7C6F007B444A /* Main.storyboard */; };
 		7600A935192B7C6F007B444A /* YZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600A934192B7C6F007B444A /* YZMasterViewController.m */; };
-		7600A938192B7C6F007B444A /* YZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600A937192B7C6F007B444A /* YZDetailViewController.m */; };
 		7600A93A192B7C6F007B444A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7600A939192B7C6F007B444A /* Images.xcassets */; };
 		7600A941192B7C6F007B444A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7600A940192B7C6F007B444A /* XCTest.framework */; };
 		7600A942192B7C6F007B444A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7600A91E192B7C6F007B444A /* Foundation.framework */; };
 		7600A943192B7C6F007B444A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7600A922192B7C6F007B444A /* UIKit.framework */; };
 		7600A94B192B7C6F007B444A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7600A949192B7C6F007B444A /* InfoPlist.strings */; };
 		7600A94D192B7C6F007B444A /* GitHubUsersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600A94C192B7C6F007B444A /* GitHubUsersTests.m */; };
+		769E8869192BAAA600F12984 /* YZGitHubUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 769E8868192BAAA600F12984 /* YZGitHubUserInfo.m */; };
+		769E886C192BACC900F12984 /* YZGitHubDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 769E886B192BACC900F12984 /* YZGitHubDownloadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +49,16 @@
 		7600A931192B7C6F007B444A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7600A933192B7C6F007B444A /* YZMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMasterViewController.h; sourceTree = "<group>"; };
 		7600A934192B7C6F007B444A /* YZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMasterViewController.m; sourceTree = "<group>"; };
-		7600A936192B7C6F007B444A /* YZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZDetailViewController.h; sourceTree = "<group>"; };
-		7600A937192B7C6F007B444A /* YZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZDetailViewController.m; sourceTree = "<group>"; };
 		7600A939192B7C6F007B444A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7600A93F192B7C6F007B444A /* GitHubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7600A940192B7C6F007B444A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7600A948192B7C6F007B444A /* GitHubUsersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GitHubUsersTests-Info.plist"; sourceTree = "<group>"; };
 		7600A94A192B7C6F007B444A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7600A94C192B7C6F007B444A /* GitHubUsersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubUsersTests.m; sourceTree = "<group>"; };
+		769E8867192BAAA600F12984 /* YZGitHubUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZGitHubUserInfo.h; path = Model/YZGitHubUserInfo.h; sourceTree = "<group>"; };
+		769E8868192BAAA600F12984 /* YZGitHubUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZGitHubUserInfo.m; path = Model/YZGitHubUserInfo.m; sourceTree = "<group>"; };
+		769E886A192BACC900F12984 /* YZGitHubDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGitHubDownloadManager.h; sourceTree = "<group>"; };
+		769E886B192BACC900F12984 /* YZGitHubDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZGitHubDownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +118,14 @@
 		7600A924192B7C6F007B444A /* GitHubUsers */ = {
 			isa = PBXGroup;
 			children = (
+				769E8866192BAA6300F12984 /* Model */,
 				7600A92D192B7C6F007B444A /* YZAppDelegate.h */,
 				7600A92E192B7C6F007B444A /* YZAppDelegate.m */,
-				7600A930192B7C6F007B444A /* Main.storyboard */,
+				769E886A192BACC900F12984 /* YZGitHubDownloadManager.h */,
+				769E886B192BACC900F12984 /* YZGitHubDownloadManager.m */,
 				7600A933192B7C6F007B444A /* YZMasterViewController.h */,
 				7600A934192B7C6F007B444A /* YZMasterViewController.m */,
-				7600A936192B7C6F007B444A /* YZDetailViewController.h */,
-				7600A937192B7C6F007B444A /* YZDetailViewController.m */,
+				7600A930192B7C6F007B444A /* Main.storyboard */,
 				7600A939192B7C6F007B444A /* Images.xcassets */,
 				7600A925192B7C6F007B444A /* Supporting Files */,
 			);
@@ -155,6 +159,15 @@
 				7600A949192B7C6F007B444A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		769E8866192BAA6300F12984 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				769E8867192BAAA600F12984 /* YZGitHubUserInfo.h */,
+				769E8868192BAAA600F12984 /* YZGitHubUserInfo.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7600A938192B7C6F007B444A /* YZDetailViewController.m in Sources */,
 				7600A935192B7C6F007B444A /* YZMasterViewController.m in Sources */,
 				7600A92B192B7C6F007B444A /* main.m in Sources */,
+				769E8869192BAAA600F12984 /* YZGitHubUserInfo.m in Sources */,
 				7600A92F192B7C6F007B444A /* YZAppDelegate.m in Sources */,
+				769E886C192BACC900F12984 /* YZGitHubDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GitHubUsers/GitHubUsers-Prefix.pch";
 				INFOPLIST_FILE = "GitHubUsers/GitHubUsers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GitHubUsers/GitHubUsers-Prefix.pch";
 				INFOPLIST_FILE = "GitHubUsers/GitHubUsers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,6 +479,7 @@
 				7600A952192B7C6F007B444A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7600A953192B7C6F007B444A /* Build configuration list for PBXNativeTarget "GitHubUsersTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +488,7 @@
 				7600A955192B7C6F007B444A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

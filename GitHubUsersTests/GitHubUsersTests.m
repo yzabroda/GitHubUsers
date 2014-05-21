@@ -7,8 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "YZGitHubDownloadManager.h"
+
 
 @interface GitHubUsersTests : XCTestCase
+
+@property (nonatomic, strong) YZGitHubDownloadManager *downloadManager;
 
 @end
 
@@ -26,9 +30,30 @@
     [super tearDown];
 }
 
-- (void)testExample
+
+
+- (void)testDownload
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    __block BOOL notified = NO;
+
+    self.downloadManager = [[YZGitHubDownloadManager alloc] init];
+    [self.downloadManager downloadGitHubUsersWithCompletion:^(NSArray *userList, NSError *error) {
+        XCTAssertFalse(error, @"An error occurred while downloading GitHub user list: %@", [error localizedDescription]);
+        XCTAssertTrue([userList count] > 0, @"Downloaded GitHub user list is empty.");
+
+        notified = YES;
+    }];
+
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0.1];
+
+    while (NO == notified) {
+        BOOL runLoopStatus = [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+                                                      beforeDate:date];
+        XCTAssertTrue(runLoopStatus, @"The currentRunLoop could not be started.");
+
+        date = [NSDate dateWithTimeIntervalSinceNow:0.1];
+    }
 }
+
 
 @end
